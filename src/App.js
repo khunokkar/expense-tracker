@@ -196,8 +196,9 @@ const App = () => {
       <h4>{records && "Income/Expenses"}</h4>
         {
           records.map((x,i)=>{
+            
             return (
-              <div key={x.date}>
+              <div key={i}>
               <div className={x.income?"in" : "out"}>
                 <ul>
                   <li><span className = 'delBtn'
