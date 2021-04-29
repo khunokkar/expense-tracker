@@ -1,0 +1,154 @@
+*{
+  font-family: monospace;
+}
+.card{
+  border: solid 1px lightgray;
+  border-radius: 5px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px;
+  background-color:aliceblue;
+  height: auto;
+}
+.card h3, h4{
+  padding: 10px;
+  margin: 0;
+  border-radius: 5px;
+}
+h3{
+  text-align: center;
+}
+h4{
+  margin:0;
+  padding: 0;
+}
+.incomeExpense{
+  padding: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  background-color: lavender;
+  border-radius: 5px;
+  padding: 10px;
+}
+.balance, .expense {
+  width: 50%;
+}
+input{
+  width: 100%;
+  display: block;
+  margin : 0 auto;
+  box-sizing: border-box;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+button{
+  width: 100%;
+  display: block;
+  margin : 0 auto;
+  box-sizing: border-box;
+}
+button.addRecord{
+  width:50%;
+  display: inline;
+}
+.btnLayout, .displayIncomeExpense {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.btnLayout .addRecord{
+  background-color: white;
+  border-radius: 5px;
+  height: 25px;
+}
+.btnLayout .addRecord:first-child{
+  color: darkgreen;
+  border-color: green;
+}
+.btnLayout .addRecord:first-child:hover{
+  color: white;
+  font-weight: 100;
+  background-color: green;
+  border-color: lightgreen;
+}
+.btnLayout .addRecord:last-child{
+  color: purple;
+  border-color: purple;
+}
+.btnLayout .addRecord:last-child:hover{
+  color: white;
+  font-weight: 100;
+  background-color: purple;
+  border-color: purple;
+}
+.addLayout{
+  width: 90%;
+  margin: 0 auto;
+  background-color: lavender;
+  padding: 10px;
+  border-radius: 5px;
+}
+.submit:hover{
+  background-color: #337ab7;
+  border-color: #337ab7;
+}
+button.submit:hover{
+  color: white;
+}
+.cancel:hover{
+  background-color: #d2792b;
+  border-color: #d2792b;
+}
+button.cancel:hover{
+  color: white;
+}
+.addLayout h4{
+  margin-bottom: 5px;
+  text-decoration: underline;
+}
+.addLayout button{
+  margin-bottom: 5px;
+  background-color: white;
+  border-radius: 5px;
+}
+.displayIncomeExpense ul li{
+ list-style: none; 
+ font-size: 16px;
+}
+.displayIncomeExpense ul li:last-child{
+  margin-left: auto;
+ }
+.displayIncomeExpense ul{
+  margin:0;
+  margin-top: 10px;
+  padding: 0;
+  display: flex;
+}
+.in{
+  border-right: solid 5px green;
+  padding-right: 5px;
+  
+}
+.out{
+  border-right: solid 5px purple;
+  padding-right: 5px;
+}
+.in p, .out p{
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  color: grey;
+}
+.delBtn{
+  display: none;
+}
+.in:hover .delBtn{
+  display: initial;
+}
+.out:hover .delBtn{
+  display: initial;
+}
